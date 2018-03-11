@@ -1,61 +1,95 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 h1 {
   margin-bottom: 15px;
   text-align: center;
-    font-family: Helvetica;
+  font-family: Helvetica;
 }
-#box {
-  float: left;
-  border: 1px solid black;
+
+p {
+
+  /*border: 1px solid black;
+  background-color: #A52A2A;
   width: 95%;
-  height: 200px;
-  position: relative;
-  background-color: grey;
-  padding-top: 30px;
-   padding-left: 10px;
+  height: 150px;
   margin-right: auto;
   margin-left: auto;
   font-family: Helvetica;
-  color: black;
-  overflow: hidden;
+  color: white;*/
 }
 
+/*p {
+  float: left;
+  border: 1px solid black;
+  width: 95%;
+  height: 150px;
+  background-color: grey;
+  position: relative
+ padding-top: 30px
+   padding-left: 10px;
+  padding-right: 15px;
+  text-align: left;
+  padding-bottom: 10px;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+  font-family: Helvetica;
+  color: black;
+  overflow: hidden;
+}*/
+
+#box {
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  background-color: grey;
+  padding: 10px;
+  border: 1px solid black;
+  width: 90%;
+  height: 150px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+#content {
+  padding-top: 20px;
+  background-color: grey; /* green */
+}
 
 
 /* Simple Responsive Framework. */
-.row {
-  width: 100%;
-}
-
 #box_chicken {
-float: right;
-color: black;
-top: -30px;
+  position: relative;
+  float: right;
   border: 1px solid black;
+  height: 30px;
+width: 80px;
+  top: -15px;
+  right: -11px;
 background-color: pink;
-position: relative;
-height: 30px;
-width: 89px;
 padding: 5px;
  font-family: Helvetica;
   font-weight: bold;
   color: black;
   text-align: center;
-margin: auto;
+  margin: auto;
 }
 
 #box_beef {
+  position: relative;
 float: right;
-color: red;
-top: -30px;
+
   border: 1px solid black;
+ top: -15px;
+  right: -11px;
 background-color: red;
-position: relative;
 height: 30px;
-width: 89px;
+width: 80px;
 padding: 5px;
  font-family: Helvetica;
   font-weight: bold;
@@ -64,10 +98,12 @@ padding: 5px;
 margin: auto;
 }
 
+
 #box_sushi {
 float: right;
 color: red;
-top: -30px;
+ top: -15px;
+  right: -11px;
   border: 1px solid black;
 background-color: yellow;
 position: relative;
@@ -81,12 +117,15 @@ padding: 5px;
 margin: auto;
 }
 
+.row {
+  width: 100%;
+}
+
 /********** Large devices only **********/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    display: inline-block;
-
+      box-sizing: 
   }
   .col-lg-1 {
     width: 8.33%;
@@ -128,7 +167,8 @@ margin: auto;
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left;
+float: left;
+
 
   }
 
@@ -148,7 +188,10 @@ margin: auto;
     width: 41.66%;
   }
   .col-md-6 {
-    width: 48.75%;
+   width: 45%;
+   margin-left: 25px;
+   margin-right: 10px;
+
   }
   .col-md-7 {
     width: 58.33%;
@@ -166,7 +209,9 @@ margin: auto;
     width: 91.66%;
   }
   .col-md-12 {
-    width: 100%;
+margin-left: center
+margin-left: center
+    width: 100%
   }
 }
 /********** Medium devices only **********/
